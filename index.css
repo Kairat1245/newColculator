@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(22, 140, 20);
+}
+.calc{
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.calc-screen p{
+    text-align: right;
+    font-size: 38px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent devision"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equel";
+    grid-gap: 7px;
+    justify-items: center;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.calc-screen{
+    height: 125px;
+    pad: 10px;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}
+.bt-orange{
+background-color: rgba(255, 166, 0, 0.841);
+}
+.zero{
+    grid-area: zero;
+    width: 70%;
+    border-radius: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+.bt-grai{
+    background-color: gray;
+}
+input{
+    color: white;
+}
